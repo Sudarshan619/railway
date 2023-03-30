@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        #parent {
+            /* background-image: url(trainstations.webp); */
+            /* background-color: red; */
+            height: 700px;
+            width: 100%;
+        }
+
+        /* #intro{
+            display: block;
+            float: none;
+        } */
+        #intro{
+            display: flex;
+            width:100% ;
+            font-size: 30px;
+            text-align: center;
+
+        }
+        #username {
+            font-size: 50px;
+
+            color: white
+        }
+        #uni{
+            margin-top: 50px
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+        }
+
+        .container {
+            min-height: 42vh;
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .container .content {
+            text-align: center;
+        }
+
+        .container .content h3 {
+            font-size: 30px;
+            color: #333;
+        }
+
+        .container .content h3 span {
+            background: blue;
+            color: #fff;
+            border-radius: 5px;
+            padding: 0 15px;
+        }
+
+        .container .content h1 {
+            font-size: 50px;
+            color: #333;
+        }
+
+        .container .content h1 span {
+            color: blue;
+        }
+
+        .container .content p {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .container .content .btn {
+            display: inline-block;
+            padding: 10px 30px;
+            font-size: 20px;
+            background: #333;
+            color: #fff;
+            margin: 0 5px;
+            text-transform: capitalize;
+        }
+
+        .container .content .btn:hover {
+            background: blue;
+        }
+
+        .form-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            padding-bottom: 60px;
+            background: #eee;
+        }
+
+        .form-container form {
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+            background: #fff;
+            text-align: center;
+            width: 500px;
+        }
+
+        .form-container form h3 {
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .form-container form input,
+        .form-container form select {
+            width: 100%;
+            padding: 10px 15px;
+            font-size: 17px;
+            margin: 8px 0;
+            background: #eee;
+            border-radius: 5px;
+        }
+
+        .form-container form select option {
+            background: cadetblue;
+        }
+
+        .form-container form .form-btn {
+            background: cadetblue;
+            color: blue;
+            text-transform: capitalize;
+            font-size: 20px;
+            cursor: pointer;
+        }
+.navbar-brand{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+        .form-container form .form-btn:hover {
+            background: blue;
+            color: cadetblue;
+        }
+
+        .form-container form p {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .form-container form p a {
+            color: blue;
+        }
+
+        .form-container form .error-msg {
+            margin: 10px 0;
+            display: block;
+            background: blue;
+            color: cadetblue;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 10px;
+
+        }
+
+        .menu {
+            background-color: rgb(0, 64, 255);
+            height: 100px;
+
+        }
+
+        .a1:hover {
+            color: black;
+        }
+
+        #parent {
+            position: relative;
+        }
+
+        .a1 {
+            display: inline;
+            margin-right: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+            margin-top: 40px;
+            color: aliceblue;
+            float: right;
+        }
+
+        .form-container {
+            position: absolute;
+            top: 50px;
+            left: 500px;
+            border-radius: 10px;
+        }
+
+        .container-fluid {
+            height: 100px;
+            font-size: 20px;
+
+
+
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+        }
+
+        p {
+            display: inline;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .text-center {
+            border: 5px solid rgb(21, 124, 226);
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+
+        body {
+            background: linear-gradient(to left, blue, cyan);
+            background-color: hsla(231, 77%, 55%, 0.3);
+        }
+
+        .col {
+            background-color: #eee;
+            /* margin-top: 3px; */
+        }
+
+        li {
+            border: 2px solid cyan;
+            border-radius: 20px;
+            margin-right: 3px;
+            /* background-color: cyan; */
+
+            /* flex-basis: ; */
+        }
+
+        li:hover {
+            background-color: rgb(0, 51, 255);
+            color: white;
+        }
+
+        .navbar-collapse {
+            display: flexbox;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .dropdown-menu {
+            background: none;
+        }
+
+        .dropdown-item:hover {
+            background-color: rgb(0, 51, 255);
+        }
+
+        .dropdown-item {
+            border-radius: 20px;
+        }
+        #username{
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        #user2{
+            display: block;
+            width: 100%;
+            /* font-size: 40px; */
+            color: gray;
+            text-align: center;
+        }
+        span{
+            color: white;
+        }
+        .header{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <i class="fa-solid fa-arrow-right"></i>RAIL<span>WAY</span><i class="fa-solid fa-arrow-left"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/search">BOOK TICKET</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/booking">MY BOOKING</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/passengers" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                           PASSENGERS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/add_passengers">ADD PASSENGERS</a></li>
+                            <li><a class="dropdown-item" href="/show_passengers">SHOW PASSENGERS</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pnr">PNR STATUS</a>
+                    </li>
+                    <li>
+                       <a class="nav-link" href="/notification">NOTIFICATIONS<span class="badge text-bg-secondary"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">LOGOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="parent">
+        <!-- <img class="opacity-75 new" src="trainstations.webp" alt="" width=100% > -->
+        <div id="uni" class="container">
+            <h1 id="username" class="animate__animated animate__zoomIn">WELCOME
+            </h1>
+            <br>
+            <h2 id="user2" class="animate__animated animate__zoomIn"><%= user.fname %></h2>
+
+        </div>
+        <div class="container">
+            <p id="intro">Welcome to the railway reservation application ,your one-stop solution for booking train
+                tickets convinently and hassle-free .</p>
+        </div>
+
+    </div>
+    <h1 class="header">TRAINS AVAILABLE FOR BOOKING</h1>
+
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col">
+                <h1>1.RAJDHANI EXPRESS</h1>
+                Rajdhani Express trains connect the national capital, New Delhi to various state capitals or the largest
+                cities of several states. These are fully air-conditioned, high-speed, long-distance trains with limited
+                stops and run at a maximum speed of 130-140 km/hr. As of now, 24 pairs of Rajdhani trains are operated
+                by
+                Indian Railways. Learn more about Rajdhani trains here.
+                <br>
+                <a href="/search"><input id="pass" type="submit" name="submit" value="BOOK NOW" class="btn btn-lg btn-success"></a>
+            </div>
+            <div class="col">
+                <img width="100%" src="rajdhani.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col">
+                <img width="100%" src="duronto.jpg" alt="">
+            </div>
+            <div class="col">
+                <h1> 2.DURONTO EXPRESS</h1>
+               
+                Duronto Express trains are a premium category, long-distance, superfast trains that connect several
+                state capitals and metro cities of India. While some Duronto trains are fully air-conditioned, some run
+                with non-air-conditioned sleeper-class as well. These trains have a speed limit of 130 km/hour and
+                operate with fewer stops. As of today, 26 pairs of Duronto trains are running on India’s tracks. Learn
+                more about Duronto Express trains here.
+                <br>
+                <a href="/search"><input id="pass" type="submit" name="submit" value="BOOK NOW" class="btn btn-lg btn-success"></a>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col">
+                <h1>3.SHATABDI EXPRESS</h1>
+
+                Shatabdi Express trains are super-fast and fully air-conditioned trains that connect major Indian
+                cities. These are day-trains that operate between short to medium distances and make round trips on the
+                same day itself. They have only seats (Chair Car) instead of berths. The Swarna Shatabdi Express is a
+                luxurious variant of the Shatabdi Express trains. Currently, there are 25 pairs of trains in this
+                series. Learn more about Shatabdi Express trains here.
+                <br>
+                <a href="/search"><input id="pass" type="submit" name="submit" value="BOOK NOW" class="btn btn-lg btn-success"></a>
+                <!-- <input type="button" value="BOOK NOW"> -->
+            </div>
+            <div class="col">
+                <img width="100%" src="Shatabdi.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col">
+                <img width="100%" src="jan.jpg" alt="">
+            </div>
+            <div class="col">
+                <h1> 4.JAN SHATABDI EXPRESS</h1>
+
+                Jan Shatabdi Express trains are an economical version of the Shatabdi Express. These superfast
+                day-trains offer the option of both air-conditioned and non-air-conditioned travel classes (AC Chair Car
+                and Second Seating). They operate at a top speed of 140 km/hr.
+                <br>
+                <a href="/search"> <input id="pass" type="submit" name="submit" value="BOOK NOW" class="btn btn-lg btn-success"></a>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col">
+                <h1>5.SAMPARK KRANTHI EXPRESS</h1>
+
+
+                Sampark Kranti Expresses are superfast express trains that link the national capital, New Delhi with the
+                state
+                capitals or one of the important cities of a state. They are an inexpensive alternative to Rajdhani
+                Express trains
+                and offer high-speed travel at low cost in both AC and Non-AC coaches. These trains operate at a maximum
+                speed of
+                110 km/hr. Learn more about Sampark Kranti trains here.
+                <br>
+                <a href="/search"><input id="pass" type="submit" name="submit" value="BOOK NOW" class="btn btn-lg btn-success"></a>
+                <!-- <input type="button" value="BOOK NOW"> -->
+            </div>
+            <div class="col">
+                <img width="100%" src="kranthi.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col">
+                <img width="100%" src="tejas.jpg" alt="">
+            </div>
+            <div class="col">
+                <h1> 6.TEJAS EXPRESS</h1>
+
+                Tejas Express trains are semi-high-speed, air-conditioned, chair car trains boasting of several onboard
+                amenities, like LED TV with charging socket, CCTV cameras, Wi-Fi, snack tables, coffee/tea vending
+                machines, celebrity chef menu, smoke/fire detection and extinguishing system, sensor water taps, and
+                bio-vacuum toilets, to mention a few. These trains have the capacity to clock 200 km/hr, but due to
+                technical reasons, their speed is restricted to 130 km/hr.
+                <br>
+                <a href="/search"><input id="pass" type="submit" name="submit" value="BOOK NOW" class="btn btn-lg btn-success"></a>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col">
+                <h1>7.VANDHE BHARATH EXPRESS</h1>
+                Vande Bharat Express is a recently launched, fully air-conditioned, semi-high-speed, intercity
+                day-train. Also known as Train 18, this train offers various facilities, such as CCTV cameras, Wi-Fi,
+                hydraulic-pressure doors, snack tables, and smoke/fire detection and extinguishing system. It runs at a
+                speed of 200 km/hr, making it one of the fastest trains in India.
+                <br>
+                <a href="/search"> <input id="pass" type="submit" name="submit" value="BOOK NOW" class="btn btn-lg btn-success"></a>
+                <!-- <input type="button" value="BOOK NOW"> -->
+            </div>
+            <div class="col">
+                <img width="100%" src="vandhe.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col">
+                <img width="100%" src="mountain train.webp" alt="">
+            </div>
+            <div class="col">
+                <h1> 8.MOUNTAIN RAILWAYS</h1>
+
+
+                Mountain Railways are train lines that pass through the mountains of India. Out of the seven mountain
+                railways of
+                the country, three have been declared as World Heritage Sites by UNESCO and named as Mountain Railways
+                of India.
+                These are the Darjeeling Himalayan Railway aka Toy Train, the Kalka–Shimla Railway, and the Nilgiri
+                Mountain
+                Railway.
+                <br>
+                <a href="/search"><input id="pass" type="submit" name="submit" value="BOOK NOW" class="btn btn-lg btn-success"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col">
+                <h1>9.LUXURY TRAINS</h1>
+                Luxury trains are tourist trains that operate across various regions of the country. As part of this
+                service, Indian Railways runs luxury tourist trains, Buddhist circuit special trains, semi-luxury
+                trains, Aastha Circuit trains, Bharat Darshan trains, and steam trains. Palace on Wheels, Royal
+                Rajasthan on Wheels, Maharajas’ Express, Deccan Odyssey, Golden Chariot, and Mahaparinirvan Express are
+                some of the luxury trains operated by the Indian Railways. The Fairy Queen is a luxury train that runs
+                from Delhi to Alwar. It is hauled by the oldest steam engine in the world, which makes it a tourist
+                attraction in itself.
+                <br>
+                <a href="/search"><input id="pass" type="submit" name="submit" value="BOOK NOW" class="btn btn-lg btn-success"></a>
+                <!-- <input type="button" value="BOOK NOW"> -->
+            </div>
+            <div class="col">
+                <img width="100%" height="350px" src="luxury.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="new.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
